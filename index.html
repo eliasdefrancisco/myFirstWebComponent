@@ -9,12 +9,20 @@
         div {
             border: 2px solid orange;
         }
+        .highlight {
+            background-color: lightgoldenrodyellow;
+        }
     </style>
     <script src="tooltip.js"></script>
     <script src="confirm-link.js"></script>
 </head>
 <body>
-    <p><my-tooltip text="Web Components is a set of standards.">Web Components</my-tooltip> are awesome!</p>
+    <p>
+        <my-tooltip text="Web Components is a set of standards.">
+            <span class="highlight">Web Components</span>
+        </my-tooltip> 
+        <span>are awesome!</span>
+    </p>
     <my-tooltip></my-tooltip>
     <p></p>
     <div>This does not get the web component styles!</div>
